@@ -22,6 +22,5 @@ public class NotificationsAppApplicationTests extends AbstractIntegrationTest {
 		notification.setMessage("Your password has been reset successfully.");
 
 		notificationSender.sendNotification(notification);
-		// Vérifiez que la notification est bien reçue et traitée
 	}
 }

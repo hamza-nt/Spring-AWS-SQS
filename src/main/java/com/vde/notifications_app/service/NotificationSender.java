@@ -26,9 +26,9 @@ public class NotificationSender {
                     .build();
 
             sqsClient.sendMessage(sendMessageRequest);
-            System.out.println("Notification sent: " + notification);
+            System.out.println("Notification envoyée : " + notification);
         } catch (JsonProcessingException e) {
-            throw new RuntimeException("Failed to serialize notification", e);
+            throw new RuntimeException("Échec de la sérialisation de la notification", e);
         }
     }
 }
